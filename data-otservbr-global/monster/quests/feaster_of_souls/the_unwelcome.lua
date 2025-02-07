@@ -17,8 +17,8 @@ monster.events = {
 	"FeasterOfSoulsBossDeath",
 }
 
-monster.health = 300000
-monster.maxHealth = 300000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "undead"
 monster.corpse = 32741
 monster.speed = 125
@@ -71,6 +71,14 @@ monster.voices = {
 	chance = 10,
 }
 
+monster.summon = {
+	maxSummons = 5,
+	summons = {
+		{ name = "Wormling", chance = 50, interval = 6000, count = 4 },
+	},
+}
+
+
 monster.loot = {
 	{ name = "crystal coin", chance = 96080, maxCount = 2 },
 	{ name = "white gem", chance = 52940, maxCount = 2 },
@@ -119,16 +127,16 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 90 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 90 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 90 },
-	{ type = COMBAT_FIREDAMAGE, percent = 90 },
-	{ type = COMBAT_LIFEDRAIN, percent = 90 },
-	{ type = COMBAT_MANADRAIN, percent = 90 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 90 },
-	{ type = COMBAT_ICEDAMAGE, percent = 90 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 90 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 90 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 10 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 10 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 10 },
+	{ type = COMBAT_FIREDAMAGE, percent = 10 },
+	{ type = COMBAT_LIFEDRAIN, percent = 10 },
+	{ type = COMBAT_MANADRAIN, percent = 10 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 10 },
+	{ type = COMBAT_ICEDAMAGE, percent = 10 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 10 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 10 },
 }
 
 monster.immunities = {
