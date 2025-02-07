@@ -7,7 +7,7 @@ monster.outfit = {
 	lookTypeEx = 32418,
 }
 
-monster.health = 75000
+monster.health = 230000
 monster.maxHealth = monster.health
 monster.race = "undead"
 monster.corpse = 32272
@@ -66,8 +66,10 @@ monster.loot = {
 }
 
 monster.attacks = {
+    { name = "melee", type = COMBAT_PHYSICALDAMAGE, interval = 2000, minDamage = 200, maxDamage = -900 },
 	{ name = "combat", type = COMBAT_DEATHDAMAGE, interval = 2000, chance = 80, minDamage = -700, maxDamage = -1200, effect = CONST_ME_MORTAREA, shootEffect = CONST_ANI_SUDDENDEATH, target = true, range = 7 },
 	{ name = "combat", type = COMBAT_LIFEDRAIN, interval = 2000, chance = 20, length = 8, spread = 0, minDamage = -900, maxDamage = -1300, effect = CONST_ME_ELECTRICALSPARK },
+	{ name = "combat", type = COMBAT_DEATHDAMAGE, interval = 2000, chance = 30, radius = 6, minDamage = -200, maxDamage = -1500, effect = CONST_ME_MORTAREA, target = false },
 }
 
 monster.defenses = {
@@ -78,15 +80,15 @@ monster.defenses = {
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 100 },
 	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
-	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 60 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = -30 },
+	{ type = COMBAT_ICEDAMAGE, percent = -50 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 60 },
 }
 
 monster.immunities = {
